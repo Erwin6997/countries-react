@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useState, useEffect} from 'react';
 import './App.css';
+import HeaderF from './HeaderF';
+import ShowCountries from './ShowCountries'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+    const [countries,setCountries] = useState(null);
+  useEffect(() =>{
+    fetch('https://restcountries.eu/rest/v2/all')
+    .then(res => res.json())
+    .then(data => setCountries(data));
+  }, [])
+  if (! countries){ return null}
+  else { return <Xx contry={countries} />}
 }
+const Xx = (props) =>{
+
+    return ( 
+        <div id="second-form">
+            <div>
+              <HeaderF />
+            </div>
+        <ShowCountries all={props.contry} />
+        </div>
+    )
+  }
 
 export default App;
