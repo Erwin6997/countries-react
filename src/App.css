@@ -54,7 +54,7 @@ body {
   height: fit-content;
 
 }
-.form-search{
+.search{
   margin-left: 3cm;
   margin-top: 0.7cm;
   font-size: 15px;
@@ -68,6 +68,7 @@ body {
 .image{
   height: 150px;
   width: 220px;
+  opacity: 1;
 }
 
 .countries:hover > .image{
@@ -89,6 +90,13 @@ body {
   padding-left: 45%;
   margin-left: 3cm;
   display: inline-grid;
+}
+.footer {
+  background-color: rgb(198, 226, 243);
+  margin-top: 3cm;
+  padding-top: 20px;
+  text-align: center;
+  margin-left: -2cm;
 }
 
 @media only screen and (min-width: 600px) {

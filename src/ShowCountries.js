@@ -6,15 +6,11 @@ console.log("data:"+props.all);
         {props.all.map((country,index) => {
             return (
             <div key={index} class="countries">
-                <div>
                     <img class="image" src={country.flag} ></img>
-                </div>
-                <div>
                     <h2 class="nameC">{country.name}</h2>
                     <p>Population :{country.population}</p>
                     <p class="region">Region : {country.region}</p>
                     <p>Capital : {country.capital}</p>
-                </div>
             </div>
             );
         })}

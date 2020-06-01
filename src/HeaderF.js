@@ -2,11 +2,10 @@ import React from 'react';
 
 const HeaderF =() =>{
     return(
-        <div>
-            <div>
-                <input type="text" id="searchInput" class="form-search" placeholder="search for a country..." aria-label="Username" aria-describedby="basic-addon1"></input>
-            </div>
-            <select id="dropdowns" class="dropdown-list"> 
+        <div className="container">
+            <h3>Where Are You Living :</h3>
+                <input type="text" class="search" placeholder="search for a country..."></input>
+            <select class="dropdown-list"> 
                 <option  value="-- All Region --">-- All Region --</option>
                 <option  value="Africa">Africa</option>
                 <option  value="Americas">America</option>

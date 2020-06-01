@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react';
 import './App.css';
 import HeaderF from './HeaderF';
 import ShowCountries from './ShowCountries'
+import Footer from './Footer';
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const Xx = (props) =>{
               <HeaderF />
             </div>
         <ShowCountries all={props.contry} />
+        <Footer />
         </div>
     )
   }
