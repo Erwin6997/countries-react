@@ -9,22 +9,15 @@ body {
   height: 100%;
   margin: 0px;
   font-family: "Lucida Console", Courier, monospace;  
-  background-color: hsl(0, 0%, 98%);
-  overflow: overlay;
-  animation: FadeIn 200ms;
-  transition: 200ms;
 }
-#root {
+.root {
   background-color: rgb(229, 228, 226);
   width: 95%;
-  display: grid;
-  grid-gap: 35px;
-  justify-content: center;
-  border-radius: 5px;
+  border-radius: 15px;
   margin: 30px 5% 10px 2%;
   box-shadow: 0px 0px 20px rgba(23, 24, 24, 0.7);
   padding-top: 30px;
-  padding-left: 20px;
+  padding-left: 1.5cm;
 }
 #navbar{
   color: rgb(25, 26, 26);
@@ -37,16 +30,28 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#mode{
+.mode{
   position:initial ;
   margin-left: 70%;
   padding-bottom: 10px;
 }
-#second-form{
-  display: grid;
+.second-form{
+  
   color: black;
   background-color: rgb(229, 228, 226);
   border-radius: 1cm;
+
+}
+.con{
+  padding-top: 1cm;
+  display: flex;
+  flex-wrap: wrap;
+}
+.countries{
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: fit-content;
 
 }
 .form-search{
@@ -74,14 +79,7 @@ body {
   margin-left: -73%;
   padding: 15px;
 }
-.form2{
-  grid-gap: 3cm;
-  width: auto;
-  height: fit-content;
-  position: inherit;
-  display: contents;
-  justify-content: space-between;
-}
+
 .big-image{
   padding-top: 70%;
   width: 410px;
@@ -100,7 +98,7 @@ body {
 }
 @media only screen and (min-width: 900px) {
   #root {    
-      grid-template-columns: auto auto auto ;  
+      grid-template-columns: auto auto auto auto;  
   }  
 }
 @media only screen and (min-width: 1200px) {
